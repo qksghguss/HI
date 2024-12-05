@@ -5,37 +5,15 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: black; /* 검은 배경 */
+    color: white; /* 텍스트 색상 */
     font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* 콘텐츠가 세로로 배치되도록 수정 */
-    justify-content: flex-start; /* 상단에 정렬 */
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-.header {
-    width: 100%;
+    height: 100vh; /* 화면 전체 높이 */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    background-color: #333; /* 헤더 배경색 */
-    color: white;
-    margin-bottom: 20px;
-}
-
-.logo {
-    font-size: 2rem;
-    margin-right: 10px;
-}
-
-.site-name {
-    font-size: 2rem;
-    font-weight: bold;
+    text-align: center;
+    padding: 10px; /* 화면 가장자리에 여백 추가 */
 }
 
 .container {
@@ -45,53 +23,41 @@ body {
 }
 
 .image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    width: 100%; /* 이미지가 부모의 너비에 맞게 크기 조정 */
+    max-width: 600px; /* 최대 너비 제한 */
+    height: auto; /* 비율에 맞게 이미지 높이 자동 조정 */
 }
 
 .greeting {
-    font-size: 2rem;
+    font-size: 2rem; /* 인삿말 크기 */
     margin-top: 20px;
 }
 
 /* 모바일 (핸드폰) 화면 */
 @media (max-width: 600px) {
     .greeting {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* 모바일에서 텍스트 크기 감소 */
     }
 
     .image {
-        max-width: 100%;
-    }
-
-    .logo, .site-name {
-        font-size: 1.5rem;
+        max-width: 100%; /* 화면에 맞게 이미지 크기 조정 */
     }
 }
 
 /* 아이패드 화면 */
 @media (max-width: 768px) {
     .greeting {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* 아이패드에서 텍스트 크기 조정 */
     }
 
     .image {
         max-width: 100%;
-    }
-
-    .logo, .site-name {
-        font-size: 1.8rem;
     }
 }
 
 /* 데스크탑 화면 */
 @media (min-width: 1024px) {
     .greeting {
-        font-size: 2.5rem;
-    }
-
-    .logo, .site-name {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* 데스크탑에서 텍스트 크기 조정 */
     }
 }
